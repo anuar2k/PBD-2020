@@ -1,2 +1,2 @@
 USE Northwind
-SELECT ContactName, Address, City, PostalCode, Country FROM Customers
+SELECT CompanyName, Address, City, PostalCode, Country FROM Customers
