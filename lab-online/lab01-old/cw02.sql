@@ -1,6 +1,5 @@
 USE Northwind
 
-SELECT
-       SupplierID,
-       FORMATMESSAGE('%s, %s', ISNULL(Phone, 'none'), ISNULL(Fax, 'none'))
+SELECT SupplierID,
+       CONCAT_WS(' ', ISNULL(Phone, 'none'), ISNULL(Fax, 'none'))
 FROM Suppliers
