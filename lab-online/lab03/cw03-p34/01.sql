@@ -6,3 +6,4 @@ JOIN [Order Details] [O D] ON P.ProductID = [O D].ProductID
 JOIN Orders O ON [O D].OrderID = O.OrderID
 JOIN Customers C ON O.CustomerID = C.CustomerID
 GROUP BY CategoryName, C.CustomerID
+ORDER BY C.CustomerID, TotalQty DESC

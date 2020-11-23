@@ -1,5 +1,5 @@
 USE library
-SELECT member.member_no, firstname, lastname, isbn, out_date, due_date
+SELECT member.member_no, firstname, lastname, isbn, log_date
 FROM member
-JOIN loan l ON member.member_no = l.member_no
+JOIN reservation r ON member.member_no = r.member_no
 WHERE member.member_no IN (250, 342, 1675)
